@@ -15,7 +15,6 @@ const App = () => {
   const [ filter, setFilter ] = useState('');
 
   const addContact = ({ name, number }) => {
-    console.log(name);
       const verificationContact = contacts.find(el => el.name.toLowerCase() === name.toLowerCase());
 
       if (!verificationContact) {
