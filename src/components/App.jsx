@@ -45,9 +45,7 @@ const App = () => {
     return (
       <div className={css.phonebook}>
         <h1 className={css.title}>Phonebook</h1>
-        <ContactForm 
-          onSubmit={addContact} 
-          />
+        <ContactForm onSubmit={addContact} />
         <h2 className={css.contacts}>Contacts</h2>
         <Filter 
           filter={filter} 
