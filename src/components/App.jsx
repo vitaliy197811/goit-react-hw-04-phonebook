@@ -16,7 +16,6 @@ const App = () => {
 
   const addContact = ({ name, number }) => {
       const verificationContact = contacts.find(el => el.name.toLowerCase() === name.toLowerCase());
-
       if (!verificationContact) {
         return setContacts([...contacts, { id: nanoid(), name, number, }, ]);
       } else {
